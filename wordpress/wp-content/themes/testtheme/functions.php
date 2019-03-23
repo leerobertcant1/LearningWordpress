@@ -20,3 +20,4 @@ add_action('init', 'test_theme_setup');
 
 add_theme_support('custom-background');
 add_theme_support('custom-header');
+add_theme_support('post-thumbnails');
