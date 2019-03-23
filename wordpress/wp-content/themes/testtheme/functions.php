@@ -7,3 +7,13 @@ function test_script_enqueue(){
 }
 //Adds a hook, each time Wordpress does something.
 add_action('wp_enqueue_scripts', 'test_script_enqueue');
+
+//Hook for menus
+function test_theme_setup(){
+    add_theme_support('menus');
+
+    register_nav_menu('test_hmenu', 'Test Header Navigation');
+    register_nav_menu('test_fmenu', 'Test Footer Navigation');
+}
+
+add_action('init', 'test_theme_setup');
