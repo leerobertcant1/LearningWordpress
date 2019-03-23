@@ -25,4 +25,3 @@
     <?php wp_nav_menu(array('theme_location'=='test_hmenu')); ?>   <!--Loads menu here--->
 
     <!--Closed in next file that opened, footer.php--->
-
