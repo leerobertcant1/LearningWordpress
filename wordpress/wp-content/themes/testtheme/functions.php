@@ -22,3 +22,18 @@ add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('aside', 'image', 'video'));
+
+function test_widget_setup(){
+    register_sidebar(array(
+        'name'          => 'sidebar',
+        'id'            => 'sidebar-1',
+        'class'         => 'sidebar-custom',
+        'description'   => 'Standard Sidebar',
+        'before_widget' => '<aside id="%1$s" class="%2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ));
+};
+
+add_action('widgets_init', 'test_widget_setup');

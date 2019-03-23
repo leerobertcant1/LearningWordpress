@@ -1,4 +1,6 @@
 <?php get_header(); ?> <!-- Wordpress code to find header--->
+<?php get_sidebar(); ?> <!-- Wordpress searches for a sidebar name in this file by default--->
+
     <h1> Test page</h1>
     <?php 
         //built in WP function, goes through posts.
@@ -9,4 +11,5 @@
             endwhile;
         endif;
         ?>
+
 <?php get_footer(); ?> <!-- Wordpress code to find footer--->
