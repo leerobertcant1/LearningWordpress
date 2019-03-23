@@ -1,0 +1,14 @@
+html, body {
+    margin:0;
+    background: white;
+    color: darkgray;
+    font:sans-serif;
+}
+
+body{
+    padding: 10%;
+}
+
+h1{
+    color:black;
+}

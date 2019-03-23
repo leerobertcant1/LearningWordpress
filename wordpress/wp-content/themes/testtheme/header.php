@@ -5,6 +5,7 @@
         <title>
             Test theme!
         </title>
+        <?php wp_head(); ?> <!--Everything created here--->
     </head>
     <body>
 
