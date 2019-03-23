@@ -3,12 +3,24 @@
     <head>  
         <meta charset="utf-8">
         <title>
-            Test theme!
+            Test theme
         </title>
         <?php wp_head(); ?> <!--Everything created here--->
     </head>
-    <body>
-    <?php wp_nav_menu(array('theme_location' =>' test_hmenu')); ?>   <!--Loads menu here--->
+    <!--Adds the page class name--->
+    <?php 
+    //Wordpress considers homepage as Blogs(is_home())
+        //Front page is the custom front page
+        if(is_front_page()):
+            $pageClasses = array('test-home-class');
+        else:
+            $pageClasses = array('test-not-home-class');
+        endif;
+        ?>
+    
+    <body <?php body_class($pageClasses);?>>
+
+    <?php wp_nav_menu(array('theme_location'=='test_hmenu')); ?>   <!--Loads menu here--->
 
     <!--Closed in next file that opened, footer.php--->
 
