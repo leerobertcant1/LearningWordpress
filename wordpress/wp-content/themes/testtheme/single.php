@@ -26,6 +26,18 @@
 ?>
 <hr>
 
+<!-- Pagination --->
+<div class="text-left"> 
+    <?php
+        next_post_link('<- Olders Posts');
+    ?>
+    </div>
+
+    <div class="text-right"> 
+    <?php
+        previous_post_link('Newer Posts ->');
+    ?>
+    </div>
 <?php 
     //Shows the comments template
     if(comments_open()) {

@@ -3,6 +3,10 @@
 
 <h1> Test page</h1>
 <?php 
+    $argPaged = (get_query_var('paged')) ? (get_query_var('paged')) : 1;
+    $argPosts = array('posts_per_page' => 2, 'paged' => $argPaged);
+    query_posts($argPosts);
+
     //built in WP function, goes through posts.
     if(have_posts()):          
         while(have_posts()): the_post(); ?>
@@ -10,7 +14,25 @@
     
     <?php 
         endwhile;
-    endif;
+    ?>
+
+    <!-- Pagination --->
+    <div class="text-left"> 
+    <?php
+        next_post_link('<- Olders Posts');
+    ?>
+    </div>
+
+    <div class="text-right"> 
+    <?php
+        previous_post_link('Newer Posts ->');
+    ?>
+    </div>
+
+    <?php
+        wp_reset_query();
+
+        endif;
     ?>
 
 <?php get_footer(); ?> <!-- Wordpress code to find footer--->
