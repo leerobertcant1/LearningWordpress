@@ -5,7 +5,7 @@
 <?php 
     //built in WP function, goes through posts.
     if(have_posts()):          
-        while(have_posts()): the_post(); echo 'Post format: '. get_post_format(); ?>
+        while(have_posts()): the_post(); ?>
             <?php get_template_part('content', get_post_format()); ?>             
     <?php 
         endwhile;
