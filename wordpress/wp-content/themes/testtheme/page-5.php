@@ -79,7 +79,6 @@
     //Removes the memory dump, like using in C sharp.
     wp_reset_postdata();
 ?>
-<hr>
 
 <h2>Type: post & Post per page = unlimited & multiple categories with arguments</h2>
 <?php
@@ -107,7 +106,6 @@
     //Removes the memory dump, like using in C sharp.
     wp_reset_postdata();
 ?>
-<hr>
 
 <h2>Categories:</h2>
 
