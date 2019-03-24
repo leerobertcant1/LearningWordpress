@@ -1,5 +1,5 @@
 <?php get_header(); ?> <!-- Wordpress code to find header--->
-<?php get_sidebar(); ?> <!-- Wordpress searches for a sidebar name in this file by default--->
+<?php //get_sidebar(); ?> <!-- Wordpress searches for a sidebar name in this file by default--->
 
 <h1> Test page</h1>
 <?php 
@@ -7,6 +7,7 @@
     if(have_posts()):          
         while(have_posts()): the_post(); ?>
             <?php get_template_part('content', get_post_format()); ?>             
+    
     <?php 
         endwhile;
     endif;

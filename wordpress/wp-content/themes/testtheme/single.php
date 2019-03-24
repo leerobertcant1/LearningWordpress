@@ -12,6 +12,7 @@
             ?>  
 
             <div class="pull-right"><?php the_post_thumbnail('thumbnail') ?> </div>
+            
             <?php 
                 endif;
             ?>
@@ -29,8 +30,9 @@
     //Shows the comments template
     if(comments_open()) {
         comments_template();
-    }else{
+    } else{
         echo '<h5 class="text-centre"> comments closed </h5>';
     }
 ?>
+
 <?php get_footer(); ?>
