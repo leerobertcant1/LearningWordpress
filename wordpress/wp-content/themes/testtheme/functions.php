@@ -41,3 +41,10 @@
 
     
     require get_template_directory().'/inc/walker.php';
+
+
+    /*function test_remove_version(){
+        return '';
+    }
+
+    add_filter('the_generator', ' test_remove_version'); */
