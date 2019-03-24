@@ -28,7 +28,16 @@
 
     <img src ="<?php header_image(); ?>" height = "<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>"alt="" />
     
-    <?php wp_nav_menu(array('theme_location'=='test_hmenu')); ?>   <!--Loads menu here--->
+    <?php 
+        wp_nav_menu(
+        array(
+            'theme_location'=>'test_hmenu',
+            'container' => false,
+            'menu_class' => 'nav navbar-nav navbar-right',
+            'walker' => new Walker_Nav_Primary()
+            )
+        ); 
+    ?>   <!--Loads menu here--->
     
     <div class='search-form-container'>
    
