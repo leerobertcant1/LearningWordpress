@@ -66,6 +66,14 @@
             'parent_item_colon' => 'Parent Item'
         );
 
+        $supportsArray = array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'revisions'
+        );
+
         $args = array(
             'labels' => $labels,
             'public' => true,
@@ -75,13 +83,7 @@
             'rewrite' => true,
             'capability_type' => 'post',
             'hierarchical' => false,
-            'supports' => array(
-                'title',
-                'editor',
-                'excerpt',
-                'thumbnail',
-                'revisions'
-            ),
+            'supports' => $supportsArray,
             'taxonomies' => array(
                 'category',
                 'post_tag'
@@ -94,3 +96,62 @@
     }
 
     add_action('init', 'test_custom_post_type');
+
+        //Creates new taxonomies, labels related to Admin panel
+        function test_custom_taxonomies(){
+            $hierarchicalLabels = array(
+                'name' => 'Fields',
+                'singular_name' => 'Fields',
+                'search_items' => 'Search Fields',
+                'all_items' => 'All Fields',
+                'parent_item' => 'Parent Fields',
+                'parent_item_colon' => 'Parent Fields:',
+                'edit_item' => 'Edit Fields',
+                'update_item' => 'Update Fields',
+                'add_new_item' => 'Add New Fields',
+                'new_item_name' => 'New Fields Name',
+                'menu_name' => 'Fields'
+            );
+    
+            $hierarchicalArgs = array(
+                'hierarchical' => true,
+                'labels' => $hierarchicalLabels,
+                'show_ui' => true,
+                'show_admin_column' => true,
+                'query_var' => true,
+                'rewrite' => array(
+                    'slug' => 'fields'
+                )
+            );   
+            
+            register_taxonomy('fields', array('custom-type-page'), $hierarchicalArgs);
+              
+            register_taxonomy('fieldsNh', array('custom-type-page-nh'), array(
+                'label' => 'fieldsNh',
+                'rewrite' => array('slug'=>'fieldsNh'),
+                'hierarchical' => false
+            ));
+
+        }
+
+        add_action('init', 'test_custom_taxonomies');
+
+
+        function test_get_terms($postId, $term){
+            $terms_list = wp_get_post_terms($postId, $term);
+            $output = '';
+
+            $i=0;
+            foreach($terms_list as $term){
+                $i++;
+
+                //for the first item
+                if(i > 1){
+                    echo $output . ', ';
+                    $output.= $term->name;
+                }
+             
+                return $output;
+            }
+        }
+    

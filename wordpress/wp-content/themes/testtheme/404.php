@@ -1,5 +1,5 @@
 <?php
- get_header();
+    get_header();
 ?>
 
     <div id="primary404" class="container">
@@ -53,5 +53,5 @@
     </div>
 
 <?php
- get_footer();
+    get_footer();
 ?>

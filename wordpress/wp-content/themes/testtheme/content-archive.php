@@ -9,7 +9,9 @@
         ?>  
 
                 <div class="pull-right">
-                        <?php the_post_thumbnail('thumbnail') ?> 
+                <?php 
+                    the_post_thumbnail('thumbnail') 
+                ?> 
                 </div>
         
         <?php 

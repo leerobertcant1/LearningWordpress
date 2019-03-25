@@ -1,5 +1,9 @@
-<?php get_header(); ?> 
-<?php get_sidebar(); ?> 
+<?php 
+    get_header(); 
+?> 
+<?php 
+    get_sidebar(); 
+?> 
 
 <h1> Test page</h1>
 <?php 
@@ -13,13 +17,17 @@
     </header>
     
 <?php    
-        while(have_posts()): the_post(); ?>
-            <?php get_template_part('content', get_post_format());
-            
-            get_template_part('content', 'archive');
-?>          
+        while(have_posts()): the_post(); 
+?>
+    <?php 
+        get_template_part('content', get_post_format());
+        
+        get_template_part('content', 'archive');
+    ?>          
     <div>
-        <?php the_posts_navigation(); ?>
+    <?php 
+        the_posts_navigation(); 
+    ?>
     </div>
     
 <?php 
@@ -27,4 +35,6 @@
     endif;
 ?>
 
-<?php get_footer(); ?> <!-- Wordpress code to find footer--->
+<?php 
+    get_footer(); 
+?> <!-- Wordpress code to find footer--->

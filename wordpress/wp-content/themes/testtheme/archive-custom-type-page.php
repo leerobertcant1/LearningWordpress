@@ -13,13 +13,17 @@
     </header>
     
 <?php    
-        while(have_posts()): the_post(); ?>
-            <?php get_template_part('content', get_post_format());
-            
-            get_template_part('content', 'archive');
-?>          
+        while(have_posts()): the_post(); 
+?>
+    <?php 
+        get_template_part('content', get_post_format());
+        
+        get_template_part('content', 'archive');
+    ?>          
     <div>
-        <?php the_posts_navigation(); ?>
+    <?php 
+        the_posts_navigation(); 
+    ?>
     </div>
     
 <?php 
