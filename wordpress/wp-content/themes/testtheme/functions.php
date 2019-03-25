@@ -48,3 +48,49 @@
     }
 
     add_filter('the_generator', ' test_remove_version'); */
+
+
+    function test_custom_post_type(){
+        $labels = array(
+            'name' => 'Custom Post Type',
+            'singular_name' => ' Single Custom Post Type',
+            'add_new' => 'Add Custom Post Item',
+            'all_items' => 'All Items',
+            'add_new_item' => 'Add Item',
+            'edit_item' => 'Edit Item',
+            'new_item' => 'New Item',
+            'view_item' => 'View Item',
+            'search_item' => 'Search Custom Page',
+            'not_found' => 'No items',
+            'not_found_in_trash' => 'No items in trash',
+            'parent_item_colon' => 'Parent Item'
+        );
+
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'has_archive' => true,
+            'publicly_queryable' => true,
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'hierarchical' => false,
+            'supports' => array(
+                'title',
+                'editor',
+                'excerpt',
+                'thumbnail',
+                'revisions'
+            ),
+            'taxonomies' => array(
+                'category',
+                'post_tag'
+            ),
+            'menu_position' => 5,
+            'exclude_from_search' => false
+        );
+
+        register_post_type('custom_post_type', $args);
+    }
+
+    add_action('init', 'test_custom_post_type');
