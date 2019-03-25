@@ -1,5 +1,5 @@
 <?php get_header(); ?> <!-- Wordpress code to find header--->
-<?php //get_sidebar(); ?> <!-- Wordpress searches for a sidebar name in this file by default--->
+<?php get_sidebar(); ?> <!-- Wordpress searches for a sidebar name in this file by default--->
 
 <h1> Test page</h1>
 <?php 
