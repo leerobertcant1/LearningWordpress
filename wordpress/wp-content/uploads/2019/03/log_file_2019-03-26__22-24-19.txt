@@ -1,0 +1,73 @@
+
+---Downloaded files---
+The import files for: Startup were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost/wordpress
+Data file = C:\xampp\htdocs\wordpress/wp-content/uploads/2019/03/demo-content-import-file_2019-03-26__22-24-19.xml
+Widget file = C:\xampp\htdocs\wordpress/wp-content/uploads/2019/03/demo-widgets-import-file_2019-03-26__22-24-19.json
+Customizer file = C:\xampp\htdocs\wordpress/wp-content/uploads/2019/03/demo-customizer-import-file_2019-03-26__22-24-19.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Footer 1 : 
+
+Text - No Title - Imported
+
+Footer 2 : 
+
+Text - Contact us - Widget already exists
+
+Footer 3 : 
+
+Navigation Menu - Quick links - Widget already exists
+
+Footer 4 : 
+
+Airi: Social Profile - Follow us - Widget already exists
+
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Footer 1 : 
+
+Text - No Title - Imported
+
+Footer 2 : 
+
+Text - Contact us - Widget already exists
+
+Footer 3 : 
+
+Navigation Menu - Quick links - Widget already exists
+
+Footer 4 : 
+
+Airi: Social Profile - Follow us - Widget already exists
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+
