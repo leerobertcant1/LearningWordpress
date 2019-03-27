@@ -7,7 +7,7 @@
           Lee's Tyranids
         </h1>
         <p>
-          This is a website to showcase my Tyranids.
+          This website shows a list of my Tyranids.
         </p>
         <div class="dummy-btn-container">
           <a  class="btn btn-primary btn-lg">
@@ -23,10 +23,6 @@
     ?>
           <div class="blog-post">
             <h3 class="blog-post-title">
-              <a class ="blog-link" href = "
-                          <?php 
-                            the_permalink();
-                          ?>">
                 <?php
                   the_title();
                 ?>

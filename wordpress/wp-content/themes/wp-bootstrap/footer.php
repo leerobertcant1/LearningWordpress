@@ -1,11 +1,11 @@
 <footer class="blog-footer">
 <p> 
-    &copy <?php 
-                echo Date('Y'); 
-            ?> - 
-            <?php 
-                bloginfo('name');
-            ?>
+    <?php 
+        bloginfo('name');       
+    ?> - 
+    <?php 
+        echo Date('Y'); 
+    ?>.
 </p>
 </footer>
 <?php 

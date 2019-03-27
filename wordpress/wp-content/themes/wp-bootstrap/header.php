@@ -34,7 +34,7 @@
         <nav class="blog-nav">
         <?php
           $menuLocations = get_nav_menu_locations(); 
-          $menuID = $menuLocations['primary']; // Get the *primary* menu ID
+          $menuID = $menuLocations['primary']; 
           $primaryNav = wp_get_nav_menu_items($menuID); 
 
           $aClass = 'blog-nav-item';

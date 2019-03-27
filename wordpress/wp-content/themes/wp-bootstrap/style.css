@@ -210,6 +210,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
    * Custom Styles
    *
    */
+.blog-author-link{
+  color:red;
+}
+
+.blog-author-link:hover{
+  color:darkred;
+}
+
+.blog-link{
+  color:lightgreen;
+}
+
+.blog-link:hover{
+  color:green;
+}
+
+.blog-masthead, .blog-nav{
+  background-color: black;
+  color: white;
+}
+
+.blog-post{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.blog-post-title{
+  margin-top:20px;
+}
   
 .box{
     padding:15px;
@@ -231,8 +260,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
     color:#000;
 }
 
-#dummyButton{
-    color:#fff;
+.dummy-btn-container{
+  color:#fff;
+}
+
+hr {
+  margin-bottom:0;
+}
+
+.post-thumb img{
+  height:auto;
+  width:100%;
 }
 
 .showcase{
@@ -250,9 +288,4 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .showcase p {
     font-size:20px;
     margin-bottom:50px;
-}
-
-.blog-masthead, .blog-nav{
-  background-color: black;
-  color: white;
 }

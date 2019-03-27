@@ -23,20 +23,10 @@
     ?>
           <div class="blog-post">
             <h3 class="blog-post-title">
-              <a class ="blog-link" href = "
-                          <?php 
-                            the_permalink();
-                          ?>">
                 <?php
                   the_title();
                 ?>
-              </a>
             </h3>
-            <p class="blog-post-meta">
-              <?php 
-                the_time('F j, Y - g:i a.');
-              ?>
-            </p>
             <blockquote>
             By <a class="blog-author-link" href = "
                            <?php 
@@ -48,17 +38,6 @@
                           ?>
                 </a>
             </blockquote>
-            <?php
-               if(has_post_thumbnail()):              
-            ?>
-              <div class="post-thumb">
-                <?php
-                  the_post_thumbnail();
-                ?>            
-              </div>
-            <?php
-               endif;
-            ?>
             <hr>
           </div>
         </div>
