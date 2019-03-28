@@ -67,6 +67,14 @@
       endif;
     ?>
 
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <?php 
+        if(is_active_sidebar('sidebar')):
+            $sideBar = dynamic_sidebar('sidebar');
+        endif;
+      ?>
+    </div>
+
     <section class="boxes">
       <div class="container">
         <div class="row">
