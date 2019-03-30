@@ -1,4 +1,6 @@
-<?php 
+Page.php 
+
+<?php /*
     get_header(); 
 ?>
   <section class="showcase">
@@ -114,4 +116,5 @@
 
  <?php 
     get_footer();
+    */
  ?>

@@ -1,0 +1,20 @@
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            {% set aClass = 'blog-nav-item' %}
+
+            {% for counter in 0..primary_nav_items|length-1 %}
+                {% if counter == 0 %}
+                    {%  set  aClass = 'blog-nav-item active' %}
+                {% elseif counter == 1 %}
+                    {% set aClass = 'blog-nav-item' %}
+                {% endif %}
+                
+                <a class="{{aClass}}" href="{{primary_nav_items[counter].url}}" title="{{primary_nav_items[counter].title}}">
+                    {{primary_nav_items[counter].title}}
+                </a>
+
+            {% endfor %}
+        </nav>
+    </div>
+</div>

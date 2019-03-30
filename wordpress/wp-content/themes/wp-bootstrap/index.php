@@ -1,17 +1,51 @@
+Index.php
+
+
+
 <?php 
+
+$test = 'test';
+
+/*
     get_header(); 
 ?>
+
+<!-- 
+  TO DO:
+
+    1) Get pictures of all models (headshots for the footer links).
+    2) Create a page for each Force Organisation area (perhaps inside
+        dropdown buttons or something).
+    3) Do a write up on the painting section(s) for each one.
+          - These could be as posts.
+          - When clicked pass through id - If the Top level show all posts under that category.
+    4) Style the header to maybe have sub menus - which will take
+      to the bit on that page [Perhaps later look at own pages].
+    5) Re-style website to look Tyranidy, look at images for banners
+      and backgrounds.
+    6) Check Games Workshops' legal policy.
+    7) Perhaps an 'About Me' page?
+
+  --->
+
+ 
+
+
   <section class="showcase">
       <div class="container">
         <h1>
-          Lee's Tyranids
+        <?php 
+               bloginfo('name');  
+            ?> 
         </h1>
         <p>
-          This is a website to showcase my Tyranids.
+          
         </p>
         <div class="dummy-btn-container">
           <a  class="btn btn-primary btn-lg">
-            Lee's Tyranids
+          <?php 
+                bloginfo('name');  
+            ?> 
           </a>
         </div>    
       </div>
@@ -25,13 +59,14 @@
             <h3 class="blog-post-title">
               <a class ="blog-link" href = "
                           <?php 
-                            the_permalink();
+                         //   the_permalink();
                           ?>">
                 <?php
                   the_title();
                 ?>
               </a>
             </h3>
+
             <p class="blog-post-meta">
               <?php 
                 the_time('F j, Y - g:i a.');
@@ -44,7 +79,7 @@
                             ?>
                          ">
                           <?php
-                            the_author();
+                           the_author();
                           ?>
                 </a>
             </blockquote>
@@ -73,74 +108,9 @@
             $sideBar = dynamic_sidebar('sidebar');
         endif;
       ?>
-    </div>
-
-    <section class="boxes">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <i class="fa fa-users" aria-hidden="true"></i>
-              <h3>
-                HQ
-              </h3>
-              <p>
-                HQ
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <i class="fa fa-gears" aria-hidden="true"></i>
-              <h3>
-                  Elites
-              </h3>
-              <p>
-                  Elites
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <h3>
-                  Troops
-              </h3>
-              <p>
-                  Troops
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <h3>
-                  Fast Attack
-              </h3>
-              <p>
-              Fast Attack
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <h3>
-                  Heavy Support
-              </h3>
-              <p>
-                  Heavy Support
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div> 
 
  <?php 
     get_footer();
+    */
  ?>
