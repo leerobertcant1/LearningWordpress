@@ -145,11 +145,4 @@
     global $FRONT_PAGE;
     $FRONT_PAGE = new frontPage();
 
-
-    class initialHtml{
-
-        
-    }
-   
-
     //********** PAGE CLASSES ENDS **********

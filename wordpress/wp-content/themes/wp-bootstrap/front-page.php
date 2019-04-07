@@ -1,8 +1,7 @@
 <?php 
   get_header();
+?>
 
-  global $FRONT_PAGE;
-  $FRONT_PAGE->setContextData();
-
+<?php
   get_footer();
 ?>

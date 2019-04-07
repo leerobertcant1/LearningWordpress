@@ -19,3 +19,12 @@
       $BANNER_PAGE->setContextData();
     ?>
   
+  <!-- Doesn't work in Stylesheet for some reason--->
+  <section class="showcase-page" style="text-align:center; margin-top:5%;">
+      <div class="container">
+        <h1>
+          Lee's Tyranids
+        </h1>
+      </div>
+    </section>
+    <hr>

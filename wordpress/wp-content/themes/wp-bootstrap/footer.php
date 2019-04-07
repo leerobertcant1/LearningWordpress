@@ -1,8 +1,8 @@
-        <footer class="blog-footer">
-            <p> 
-                <?php bloginfo('name'); ?> - <?php echo Date('Y'); ?>.
-            </p>
-        </footer>
+<footer class="blog-footer">
+    <p> 
+        <?php bloginfo('name'); ?> - <?php echo Date('Y'); ?>.
+    </p>
+</footer>
 <?php  wp_footer(); ?>
 
 
